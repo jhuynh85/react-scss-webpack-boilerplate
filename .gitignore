@@ -63,7 +63,7 @@ typings/
 
 # production
 /build
-/dist
+/dist/*
 !/dist/index.html
 !/dist/favicon.ico
 
