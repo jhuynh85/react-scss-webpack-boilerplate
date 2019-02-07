@@ -63,9 +63,7 @@ typings/
 
 # production
 /build
-/dist/*
-!/dist/index.html
-!/dist/favicon.ico
+/dist
 
 # misc
 .vscode

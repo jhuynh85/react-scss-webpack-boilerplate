@@ -1,7 +1,9 @@
 var styleLintPlugin = require("stylelint-webpack-plugin");
 var path = require("path");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+	entry: "./src/index.js",
 	module: {
 		rules: [
 			{
@@ -35,6 +37,10 @@ module.exports = {
 			failOnError: false,
 			quiet: false,
 			syntax: "scss"
+		}),
+		new HtmlWebpackPlugin({
+			template: "./src/index.html",
+			filename: "index.html"
 		})
 	]
 };
